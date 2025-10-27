@@ -1,0 +1,16 @@
+# Configuration for Cog - Replicate's model packaging tool
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.1.0"
+    - "torchvision==0.16.0"
+    - "diffusers==0.24.0"
+    - "transformers==4.35.0"
+    - "accelerate==0.25.0"
+    - "safetensors==0.4.1"
+    - "pillow==10.1.0"
+    - "numpy==1.26.2"
+
+predict: "predict.py:Predictor"
